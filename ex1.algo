@@ -1,0 +1,26 @@
+ALGORITHM algorithm_name
+VAR
+    ph:string;
+    var ph1
+BEGIN
+    ecrire("ecrire une phrase qui se termine avec point");
+    lire(ph)
+    var ph1 := ph.lenght
+    sum=0
+    var=0
+    IF (ph1[ph]=".") THEN
+        ecrire("ecrire une phrase qui se termine avec une point")
+    END_IF
+    FOR i FROM 1 TO  ph1 STEP ++  DO
+        IF (ph[i]=" ") THEN
+        sum=sum+1
+        END_IF
+        ecrire("votre phrase contient", sum,"mots")
+    END_FOR
+    FOR i FROM  1 TO ph1 STEP ++  DO
+        IF (ph[i]="a","e","y","u","i","o") THEN
+            var=var+1
+        END_IF
+        ecrire("votre phrase contient",var,"alphabet")
+    END_FOR
+END
