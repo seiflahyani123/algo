@@ -5,10 +5,12 @@ VAR
 BEGIN
     ecrire("ecrire une phrase qui se termine avec point");
     lire(ph)
-    var ph1 := ph.lenght
+    ph1 := ph.lenght
     sum=0
     var=0
     IF (ph1[ph]=".") THEN
+        ecrire("il y a",ph1,"mots dans la phrase")
+    ELSE
         ecrire("ecrire une phrase qui se termine avec une point")
     END_IF
     FOR i FROM 1 TO  ph1 STEP ++  DO
@@ -21,6 +23,6 @@ BEGIN
         IF (ph[i]="a","e","y","u","i","o") THEN
             var=var+1
         END_IF
-        ecrire("votre phrase contient",var,"alphabet")
+        ecrire("votre phrase contient",ph1,"alphabet")
     END_FOR
 END
